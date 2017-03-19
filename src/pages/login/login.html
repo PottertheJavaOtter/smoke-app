@@ -1,0 +1,18 @@
+
+
+
+<ion-content padding>
+  <h1>Login</h1>
+  <h2>Enter pin code:</h2>
+
+  <div>
+    {{pin}}
+  </div>
+
+
+  <ion-digit-keyboard [width]="keyboardSettings.width" [visible]="keyboardSettings.visible" [leftActionOptions]="keyboardSettings.leftActionOptions"
+    [rightActionOptions]="keyboardSettings.rightActionOptions" [roundButtons]="keyboardSettings.roundButtons" [showLetters]="keyboardSettings.showLetters"
+    [swipeToHide]="keyboardSettings.swipeToHide" [theme]="keyboardSettings.theme" (numberClick)="numberClick($event)">
+  </ion-digit-keyboard>
+
+</ion-content>
